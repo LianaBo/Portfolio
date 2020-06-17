@@ -1,0 +1,68 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	color: #1d1d1d;
+	font-family: 'Formular',Arial,sans-serif;
+}
+
+body{
+/*background: radial-gradient(circle farthest-corner at 100px 50px, #352A3B, #FBF2EB);*/
+   background: peachpuff linear-gradient(90deg,
+    #fff 98%, #d7d7d7 2%
+    ) center center / 3.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav{
+	padding: 45px 0;
+}
+ul li{
+	list-style: none;
+	 display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+.menu__item{
+    padding-left: 15px;
+}
+.menu__item a{
+	color: #1d1d1d;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.menu__item a:hover{
+	color: #ed5e3c;
+	transition: 0.2s;
+}
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+}
