@@ -72,6 +72,7 @@ nav {
 }
 
 /*header-main*/
+
 .header-main{
 	display: flex;
 	flex-wrap: wrap;
@@ -125,13 +126,16 @@ font-size: 70px;
   left: 2px;
 }
 
+/*about*/
+
 .about-me{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-top: 40px;
 padding-bottom: 40px;
 background: rgb(255,255,255, 0.65);
+letter-spacing: 1px;
 }
 
  .title{
@@ -143,49 +147,65 @@ background: rgb(255,255,255, 0.65);
 }
 
 
-.article{
-	max-width: 500px;
-	padding: 5px;
-	margin: 20px auto;
-	 border: 1.5px solid #ed5e3c;
-	border-radius: 5px;
-	font-weight: 500;
-	
+.contacts ul{
+	padding-top: 40px;
+padding-bottom: 40px;
+font-weight: 700;
+text-transform: uppercase;
 }
 
-.meta{
-	padding: 5px 0;
-	overflow: hidden;
-	font-size: 15px;
-	margin: 0 auto;
+.contacts li{
+	/*margin: 15px;*/
+	padding: 25px 25px;
+
+}
+.contacts__item a{
+  background-image: linear-gradient(#FE5568 50%, #FE5568 50%); 
+  background-position: center bottom; 
+  background-repeat: no-repeat; 
+  background-size: 0 2px, 100% 2px; 
+  color: #000; 
+  padding-bottom: 3px; 
+  transition: .5s ease-in-out;
 }
 
-.article{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.attribute{
-	flex-grow: 1; 
+.contacts__item a:hover {
+  background-size: 100% 2px, 100% 2px;
+  color: #FE5568;
 }
 
 .content{
 	max-width: calc(60% - 20px);
+	align-self: center;
+
 }
 
 .content p{
 	margin: 15px;
+	text-indent: 1.8em;
 }
+
+/* skill*/
 
 .skill{
 	background: rgb(255,255,255, 0.65);
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	padding-top: 40px;
+padding-bottom: 40px;
+letter-spacing: 1px;
+
 }
-.skill-left..skill-right {
-  list-style: none;
-  font-family: "Lucida Sans";
+
+.skill-title{
+	text-align: center;
+	padding-bottom: 15px;
 }
+
+/*.skill-left, .skill-right{
+	max-width: calc(50% - 20px);
+}*/
+
 .skill-left li,.skill-right li{
   position: relative;
   padding: 20px 0 20px 40px;
@@ -216,3 +236,73 @@ background: rgb(255,255,255, 0.65);
 }
 .skill-left li:hover:before,.skill-right li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
 .skill-left li:last-child:after,.skill-right  li:last-child:after {content: none;}
+
+
+.footer{
+	text-align: center;
+	padding: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu__item a{
+    	font-size: 20px;
+    }
+
+
+    .header-main {
+    	display: flex;
+        flex-direction: row;
+    }
+
+    .header-title h3{
+    	font-size: 20px;
+
+    }
+
+     .header-title h1{
+    	font-size: 50px;
+    }
+
+     .header-title span{
+    	font-size: 50px;
+    	margin-left: 100px;
+    }
+
+    .wrapper-photo{
+    	max-width: calc(50% - 20px);
+    }
+
+    p,a,li{
+    	font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px){
+.content{
+	max-width: 100%;
+
+}
+.wrapper-photo{
+    	max-width: calc(40% - 20px);
+    }
+
+.contacts ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.contacts li{
+	padding: 5px;
+	margin: 5px;
+}
+
+.skill{
+	display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+}

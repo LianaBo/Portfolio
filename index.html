@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Лиана Бобрикова</title>
     <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 
 <body>
     <header>
         <div class="container">
-            <nav сlass="header-nav">
+            <nav сlass="header-nav" id="nav">
                 <ul class="menu">
-                    <li class="menu__item"><a href="">Обо мне</a></li>
-                    <li class="menu__item"><a href="">Мои навыки</a></li>
-                    <li class="menu__item"><a href="">Контакты</a></li>
+                    <li class="menu__item"><a href="#about">Обо мне</a></li>
+                    <li class="menu__item"><a href="#skill">Мои навыки</a></li>
+                    <li class="menu__item"><a href="#about">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-main">
@@ -31,62 +32,68 @@
             </div>
         </div>
     </header>
+
     <!--  about -->
-    <div class="section">
+    <div class="section" id="about">
         <div class="container">
             <div class="title">
                 <h2>обо мне</h2>
             </div>
             <div class="about-me">
-                <div class="meta">
-                    <div class="article">
-                        <div class="attribute">ФИО:</div>
-                        <div class="value">Бобрикова Лиана Семеновна</div>
-                    </div>
-                    <div class="article">
-                        <div class="attribute">Дата рождения:</div>
-                        <div class="value">21.10.1997</div>
-                    </div>
-                    <div class="article">
-                        <div class="attribute">Город:</div>
-                        <div class="value">Краснодар</div>
-                    </div>
-                    <div class="article">
-                        <div class="attribute">Образование:</div>
-                        <div class="value">КубГУ (Бакалавр)</div>
-                    </div>
+                <div class="contacts">
+            	<ul>
+            		<li class="contacts__item"><a href="https://t.me/LianaBo">Telegram</a></li>
+            		<li class="contacts__item"><a href="mailto:liana.bobrikova@bk.ru" target="_blank">liana.bobrikova@bk.ru</a></li>
+            		<li class="contacts__item"><a href="https://github.com/LianaBo" target="_blank">GitHub</a></li>
+            		<li class="contacts__item"><a href="https://wa.me/79054703910" target="_blank">WhatsApp</a></li>
+            	</ul>
+            </div>
+             <div class="content">
+                    <p>Здравствуйте!  Меня зовут Лиана, я проживаю в городе Краснодаре. Мне всегда было интересно узнавать что-то новое и я решила углубить свои знания в области тестирования ПО.</p>
+                    <p>На данный момент мой путь тестировщика только начался и хочется верить, что мне удастся его преодолеть. Я тот человек, который готов совершенствовать свои навыки и не испытываю ужаса перед изучением чего-то нового.</p>
+                    <p>Что касается моих увлечений, то я очень люблю читать. В основном это книги в жанре фантастика, иногда фэнтези (что поделать, бывает…).  С недавних пор начала интересоваться версткой, довольно кропотливое занятие, требующее терпения и внимательности.</p>
                 </div>
-                <div class="content">
-                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laboriosam minima et, laudantium ipsam sit atque consequuntur, nihil corporis voluptatum asperiores ullam obcaecati quisquam vel.</p>
-                	<p>Consequatur voluptatibus similique, tenetur? Veritatis nam et accusamus, porro, quis, earum possimus dolorem amet molestiae quaerat odio eaque odit quibusdam id, repudiandae aliquid autem ex. Repellendus sed delectus dolorem. Molestias.</p>
-                	<p>Consequatur voluptatibus similique, tenetur? Veritatis nam et accusamus, porro, quis, earum possimus dolorem amet molestiae quaerat odio eaque odit quibusdam id, repudiandae aliquid autem ex. Repellendus sed delectus dolorem. Molestias.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- skill -->
+    <div class="section" id="skill">
+        <div class="container">
+            <div class="title">
+                <h2>Мои навыки</h2>
+            </div>
+            <div class="skill">
+                <div class="skill-left">
+                    <h3 class="skill-title">Тестирование</h3>
+                    <ul>
+                        <li class="skill-left__item">Знания в теории тестирования</li>
+                        <li class="skill-left__item">Составление main-map проекта (ссылка)</li>
+                        <li class="skill-left__item">Тест-дизайн. Составление чек-листов, тест-кейсов(ссылка)</li>
+                        <li class="skill-left__item">Понимание жизненного циклы ПО</li>
+                        <li class="skill-left__item">Владение основами SQL (ПЕРЕЧИСЛИТЬ КОМАНДЫ)</li>
+                    </ul>
+                </div>
+                <div class="skill-right">
+                    <h3 class="skill-title">Дополнительно</h3>
+                    <ul>
+                        <li class="skill-right__item">Основы программирования JavaScript</li>
+                        <li class="skill-right__item">Навыки работы Git и GitHub (ссылка)</li>
+                        <li class="skill-right__item">Владение HTML5 и CSS3</li>
+                        <li class="skill-right__item">Опыт работы с developer tools</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section">
+    <footer class="footer">
     	<div class="container">
-    		<div class="title">
-                <h2>Мои навыки</h2>
-            </div>
-            <div class="skill">
-            	<ul class="skill-left">
-            		<li class="skill-left__item">Знания в теории тестирования</li>
-            		<li class="skill-left__item">Составление main-map проекта (ссылка)</li>
-            		<li class="skill-left__item">Основы тест-дизайна. Составление чек-листов, тест-кейсов(ссылка)</li>
-            		<li class="skill-left__item">Понимание жизненного циклы ПО</li>
-            		<li class="skill-left__item">Владение основами SQL (ПЕРЕЧИСЛИТЬ КОМАНДЫ)</li>
-            	</ul>
-            	<ul class="skill-right">
-            		<li class="skill-right__item">Основы программирования JavaScript</li>
-            		<li class="skill-right__item">Навыки работы Git (ссылка)</li>
-            		<li class="skill-right__item">Владение основами (и не только) HTML5 и CSS3</li>
-            		<li class="skill-right__item">Опыт работы с developer tools</li>
-            	</ul>
-            </div>
+    		<p>&copy; 2020 — Liana Bobrikova</p>
     	</div>
-    </div>
-   
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+     <script src="js/main.js"></script>
 </body>
 
 </html>
