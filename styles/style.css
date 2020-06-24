@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 2 version
-*/
 
 body,
 div,
@@ -238,6 +232,15 @@ nav {
     text-indent: 1.8em;
 }
 
+.content a{
+   color: #FE5568;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 40px;
+}
+
+
 /* skill*/
 
 .skill {
@@ -259,8 +262,8 @@ nav {
 }
 
 .skill a{
-	color: #FE5568;
-	text-decoration: underline;
+    color: #FE5568;
+    text-decoration: underline;
 }
 .skill-left li,
 .skill-right li {
